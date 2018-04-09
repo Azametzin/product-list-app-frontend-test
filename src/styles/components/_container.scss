@@ -1,0 +1,26 @@
+.container {
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 0 $m-size;
+}
+
+.container .addBtn {
+    color: $off-white;
+    font-weight: 600;
+    width: 14rem;
+    height: 3rem;
+    margin: none;
+    background-color: transparent;
+    border: none;
+    transition: 100ms
+}
+
+.addBtnSection {
+    text-align: right
+}
+
+.container .addBtn:hover {
+    color: $off-black;
+    background-color: $off-white;
+    transition: 100ms
+}

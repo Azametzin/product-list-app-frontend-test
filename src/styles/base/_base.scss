@@ -1,0 +1,67 @@
+html {
+    font-size: 62.5%
+}
+
+body {
+    background: $dark-blue;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: $m-size;
+}
+
+button {
+    cursor: pointer;
+    outline: none;
+}
+
+button:disabled {
+    cursor: default;
+}
+
+// button:active {
+//     outline: none;
+// }
+
+.file-input-wrapper {
+    width: 200px;
+    height: 40px;
+    overflow: hidden;
+    position: relative;
+}
+.file-input-wrapper > input[type="file"] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    height: 100%;
+    width: 100%
+}
+.file-input-wrapper > .btn-file-input {
+    display: inline-block;
+    width: 14rem;
+    height: 4rem;
+}
+.file-input-wrapper:hover > .btn-file-input {
+    background-color: $off-white;
+    border: none;
+}
+
+.saveBtn {
+    margin-top: 1.2rem;
+}
+
+.saveAndCancelBtn {
+    color: $off-white;
+    font-weight: 600;
+    width: 14rem;
+    height: 2.6rem;
+    margin: none;
+    background-color: transparent;
+    border: none;
+    transition: 100ms
+}
+
+.saveAndCancelBtn:hover {
+    color: $off-black;
+    background-color: $off-white;
+    transition: 100ms
+}
